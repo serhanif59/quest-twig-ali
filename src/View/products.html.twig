@@ -9,6 +9,11 @@
 </head>
 
 <body>
-    <h1>Hello {{ name }} !</h1> 
+    <h1>List of Products : </h1>
+    {% for product in products %}
+        <h2>{{ product }}</h2>
+    {% endfor %}
+
+    {{dump(products)}}
 </body>
 </html>
